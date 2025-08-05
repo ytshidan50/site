@@ -1,0 +1,117 @@
+/* Make placeholder text visible on dark backgrounds */
+::placeholder {
+    color: #cccccc85 !important;
+}
+:root {
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+
+    --form-valid-color: orange;
+    --form-valid-border-color: violet;
+    --form-invalid-color: blue;
+    --form-invalid-border-color: red;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.profile-photo {
+    box-shadow: 0 0 2em rgb(255, 255, 255);
+    border: 0.1em solid rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2em var(--secondary-color);
+    border: 0.1em solid var(--secondary-color);
+}
+
+.header-area {
+    background: rgba(33, 37, 41, 0); /* semi-transparent dark */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* for Safari */
+    box-shadow: 0 0 2em rgb(0, 0, 0);
+}
+
+.custom-card {
+    transition: all 0.2s;
+    background: var(--secondary-color);
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    height: fit-content;
+}
+.custom-card:hover {
+    transform: scale(1.05);
+    background: black;
+    border: solid 0.7px white;
+}
+
+.profile-links {
+    transition: all 0.2s;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+}
+.profile-links:hover {
+    transform: scale(1.25);
+    background: black;
+}
+
+.profile-quote {
+    transition: all 0.2s;
+    color: white;
+}
+.profile-quote:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 7em rgb(0, 0, 0);
+    stroke: black;
+    stroke-width: 10px;
+}
+
+.form-control {
+    background-color: var(--dark-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color);
+}
+.form-control:focus {
+    background-color: var(--dark-color) !important;
+    color: white !important;
+    border-color: white;
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,.25);
+}
+
+.input-group-text{
+    background-color: var(--dark-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+.input-group-text:focus {
+    background-color: var(--dark-color) !important;
+    color: white !important;
+    border-color: white;
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,.25);
+}
+
+.social-links{
+    text-decoration: none;
+    color: white;
+}
+
+.social-cards{
+    background-color: var(--dark-color);
+    border: solid 0.1px var(--dark-color);
+    border-radius: 0.7em;
+}
+
+.copyrights-area {
+    background: rgba(33, 37, 41, 0); /* semi-transparent dark */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: x-small;
+}
